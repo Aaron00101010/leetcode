@@ -14,6 +14,7 @@ var generateParenthesis = function(n) {
       result.push(str);
       return;
     }
+    //穷举所有可能
     if (right < left) {
       generate(`${str})`, left, right + 1);
     }
